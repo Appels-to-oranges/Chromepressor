@@ -1,0 +1,20 @@
+{
+  "name": "Chromepressor",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Adjust audio dynamics in Chrome tabs.",
+  "permissions": [
+    "offscreen",
+    "tabCapture",
+    "tabs",
+    "activeTab",
+    "background",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
